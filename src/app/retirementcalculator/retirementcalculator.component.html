@@ -1,0 +1,59 @@
+<div class="details">
+    <div class="row">
+      <div class="col-md-8">
+        <form class="form" action="/result" method="post">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="input-group">
+                <label for="amountInputField">Monthly Investment Amount (Rs.)</label>
+                <input type="text" class="form-control" id="amountInputField" placeholder="20000" data-name="amount" required>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="col-xs-7">
+                  <label for="periodInputField">Investment Period</label>
+                  <div class="input-group">
+                    <!-- <label for="periodInputField">Investment Period</label> -->
+                    <input type="text" class="form-control" id="periodInputField" placeholder="10" data-name="period" required>
+                    <span class="input-group-addon" id="period-addon">years</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-xs-6">
+                  <div class="form-group">
+                    <label for="returnRateInputField">Expected Annual Returns (%)</label>
+                    <input type="text" class="form-control" id="returnRateInputField" placeholder="15" data-name="return_rate" required>
+                  </div>
+                </div>
+                <div class="col-xs-4">
+                  <div class="form-group">
+                    <label for="inflationInputField">Adjust for Inflation ?</label>
+                    <select class="form-control" id="inflationSelectField" data-name="inflation">
+                      <option value="no" selected="selected">No</option>
+                      <option value="yes">Yes</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="startButton" id="emptyLabel"></label>
+                <button type="submit" class="btn btn-primary btn-block" id="calculateButton">Calculate</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-4">
+        <!-- <div id="summary-box">
+          <h4>Summary of Result</h4>
+        </div>  -->
+      </div>
+    </div>
+
+
